@@ -10,7 +10,7 @@ const HERO_SLIDES = [
     buttonText: "Shop Products",
     bgGradient: "from-blue-600 via-indigo-600 to-blue-700",
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800",
-    fallbackImage: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+    fallbackImage: "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const HERO_SLIDES = [
     buttonText: "Browse Collection",
     bgGradient: "from-indigo-600 via-purple-600 to-indigo-700",
     image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800",
-    fallbackImage: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    fallbackImage: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const HERO_SLIDES = [
     buttonText: "Shop Electronics",
     bgGradient: "from-blue-700 via-sky-600 to-indigo-700",
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800",
-    fallbackImage: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    fallbackImage: "https://images.unsplash.com/photo-1597872250970-45d309260655?auto=format&fit=crop&q=80&w=800"
   }
 ];
 

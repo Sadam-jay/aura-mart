@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FiTrash2, FiShoppingBag, FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 import { removeFromCart, updateQuantity, clearCart } from '../redux/slices/cartSlice';
 import { setCheckoutModalOpen, showToast } from '../redux/slices/uiSlice';
-import { formatCurrency } from '../utils/formatters';
+import { formatCurrency, getFallbackProductImage } from '../utils/formatters';
 
 const CartPage = () => {
   const dispatch = useDispatch();
@@ -85,6 +85,9 @@ const CartPage = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  onError={(e) => {
+                    e.currentTarget.src = getFallbackProductImage(item.category, item.id);
+                  }}
                   className="max-h-full max-w-full object-contain"
                 />
               </div>

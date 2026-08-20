@@ -15,7 +15,7 @@ import {
 import { addToCart } from '../redux/slices/cartSlice';
 import { toggleWishlist } from '../redux/slices/wishlistSlice';
 import { showToast } from '../redux/slices/uiSlice';
-import { formatCurrency, getEstimatedDelivery } from '../utils/formatters';
+import { formatCurrency, getEstimatedDelivery, getFallbackProductImage } from '../utils/formatters';
 import StarRating from '../components/common/StarRating';
 import ProductCard from '../components/products/ProductCard';
 
@@ -112,6 +112,9 @@ const ProductDetails = () => {
           <img
             src={product.image}
             alt={product.title}
+            onError={(e) => {
+              e.currentTarget.src = getFallbackProductImage(product.category, product.id);
+            }}
             className="max-h-[350px] w-auto object-contain"
           />
           {product.discountPercentage && (

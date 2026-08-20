@@ -5,7 +5,7 @@ import { FiHeart, FiShoppingBag, FiEye, FiCheck } from 'react-icons/fi';
 import { addToCart } from '../../redux/slices/cartSlice';
 import { toggleWishlist } from '../../redux/slices/wishlistSlice';
 import { setQuickViewOpen, showToast } from '../../redux/slices/uiSlice';
-import { formatCurrency } from '../../utils/formatters';
+import { formatCurrency, getFallbackProductImage } from '../../utils/formatters';
 import StarRating from '../common/StarRating';
 
 const ProductCard = ({ product }) => {
@@ -22,15 +22,15 @@ const ProductCard = ({ product }) => {
     e.stopPropagation();
     if (isInCart) {
       navigate('/cart');
-    } else {
-      dispatch(addToCart({ product, quantity: 1 }));
-      dispatch(
-        showToast({
-          message: `Added "${product.title.slice(0, 24)}..." to cart!`,
-          type: 'success',
-        })
-      );
+      return;
     }
+    dispatch(addToCart(product));
+    dispatch(
+      showToast({
+        message: `Added "${product.title.slice(0, 25)}..." to cart`,
+        type: 'success',
+      })
+    );
   };
 
   const handleWishlistClick = (e) => {
@@ -38,7 +38,9 @@ const ProductCard = ({ product }) => {
     dispatch(toggleWishlist(product));
     dispatch(
       showToast({
-        message: isInWishlist ? `Removed from wishlist` : `Saved to wishlist!`,
+        message: isInWishlist
+          ? `Removed "${product.title.slice(0, 25)}..." from wishlist`
+          : `Added "${product.title.slice(0, 25)}..." to wishlist`,
         type: isInWishlist ? 'info' : 'success',
       })
     );
@@ -57,6 +59,9 @@ const ProductCard = ({ product }) => {
         <img
           src={product.image}
           alt={product.title}
+          onError={(e) => {
+            e.currentTarget.src = getFallbackProductImage(product.category, product.id);
+          }}
           className="absolute inset-0 w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-300"
           loading="lazy"
         />

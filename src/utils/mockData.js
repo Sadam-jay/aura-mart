@@ -9,7 +9,7 @@ export const MOCK_PRODUCTS = [
     price: 109.95,
     description: "Your everyday carry bag for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday essentials.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 3.9, count: 120 }
   },
   {
@@ -18,7 +18,7 @@ export const MOCK_PRODUCTS = [
     price: 22.3,
     description: "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 4.1, count: 259 }
   },
   {
@@ -27,7 +27,7 @@ export const MOCK_PRODUCTS = [
     price: 55.99,
     description: "Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 4.7, count: 500 }
   },
   {
@@ -36,7 +36,7 @@ export const MOCK_PRODUCTS = [
     price: 15.99,
     description: "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 2.1, count: 430 }
   },
   {
@@ -45,7 +45,7 @@ export const MOCK_PRODUCTS = [
     price: 695,
     description: "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 4.6, count: 400 }
   },
   {
@@ -54,7 +54,7 @@ export const MOCK_PRODUCTS = [
     price: 168,
     description: "Satisfaction Guaranteed. Return or exchange any order easily. Designed and manufactured in Bengaluru, India.",
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/61sbMiAs0GL._AC_UL640_QL65_ML3_.jpg",
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 3.9, count: 70 }
   },
   {
@@ -63,7 +63,7 @@ export const MOCK_PRODUCTS = [
     price: 64,
     description: "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, 8.1, 7; Reformatting may be required for other operating systems.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    image: "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 4.7, count: 350 }
   },
   {
@@ -72,7 +72,7 @@ export const MOCK_PRODUCTS = [
     price: 109,
     description: "Easy upgrade for faster boot up, shutdown, application load and response. Boosts burst write performance, making it ideal for typical PC workloads.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    image: "https://images.unsplash.com/photo-1597872250970-45d309260655?auto=format&fit=crop&q=80&w=800",
     rating: { rate: 2.9, count: 470 }
   }
 ];
@@ -114,7 +114,7 @@ export const HERO_SLIDES = [
     buttonText: "Shop Collection",
     bgGradient: "from-indigo-900 via-slate-900 to-purple-950",
     accentColor: "indigo",
-    image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 2,
@@ -124,7 +124,7 @@ export const HERO_SLIDES = [
     buttonText: "Explore Sale",
     bgGradient: "from-slate-900 via-emerald-950 to-slate-950",
     accentColor: "emerald",
-    image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 3,
@@ -134,6 +134,6 @@ export const HERO_SLIDES = [
     buttonText: "Browse Tech",
     bgGradient: "from-slate-900 via-blue-950 to-indigo-950",
     accentColor: "blue",
-    image: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg"
+    image: "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&q=80&w=800"
   }
 ];

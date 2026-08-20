@@ -5,7 +5,7 @@ import { FiX, FiShoppingBag, FiHeart, FiCheck, FiArrowRight } from 'react-icons/
 import { setQuickViewOpen, showToast } from '../../redux/slices/uiSlice';
 import { addToCart } from '../../redux/slices/cartSlice';
 import { toggleWishlist } from '../../redux/slices/wishlistSlice';
-import { formatCurrency } from '../../utils/formatters';
+import { formatCurrency, getFallbackProductImage } from '../../utils/formatters';
 import StarRating from '../common/StarRating';
 
 const QuickViewModal = () => {
@@ -65,6 +65,9 @@ const QuickViewModal = () => {
             <img
               src={product.image}
               alt={product.title}
+              onError={(e) => {
+                e.currentTarget.src = getFallbackProductImage(product.category, product.id);
+              }}
               className="max-h-full max-w-full object-contain"
             />
           </div>

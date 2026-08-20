@@ -5,7 +5,7 @@ import { FiInbox } from 'react-icons/fi';
 
 const ProductGrid = () => {
   const { filteredItems, status, error, searchQuery } = useSelector(
-    (state) => state.products
+    (state) => state.products 
   );
 
   // Skeleton Loader Cards
